@@ -7,6 +7,14 @@ pandas>=2.0.0
 numpy>=1.24.0
 pyarrow>=14.0.0
 
+# Testing
+pytest>=7.4.0
+pytest-cov>=4.1.0
+
+# Linting
+flake8>=6.1.0
+black>=23.9.0
+
 # Utilities
 python-dotenv>=1.0.0
 
