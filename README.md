@@ -1,5 +1,9 @@
 # Data Engineering Utilities
 
+[![Python](https://img.shields.io/badge/Python-3.11+-blue.svg)](https://www.python.org/)
+[![Tests](https://github.com/fabienpierret/data-engineering-utils/workflows/CI/badge.svg)](https://github.com/fabienpierret/data-engineering-utils/actions)
+[![License](https://img.shields.io/badge/License-MIT-green.svg)](LICENSE)
+
 A collection of production-ready utilities for data engineering workflows. This library provides efficient, scalable tools for data processing, transformation, and storage optimization using Polars and Parquet.
 
 ## 🎯 Objective
@@ -152,14 +156,17 @@ data-engineering-utils/
 ## 🧪 Testing
 
 ```bash
+# Install dependencies
+pip install -r requirements.txt
+
 # Run all tests
-pytest tests/
+pytest tests/ -v
 
 # Run with coverage
-pytest --cov=data_utils tests/
+pytest tests/ --cov=data_utils --cov-report=html
 
 # Run specific test
-pytest tests/test_dollar_bars.py
+pytest tests/test_dollar_bars.py -v
 ```
 
 ## 📊 Performance
